@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Home_page.jpg) no-repeat;
+    background-size: cover;
+    background-position:center ;
+}
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "popins",sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color:antiquewhite;
+    }
+.logo{
+        font-size: 2.5em;
+        color: #397c37;
+        user-select: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+.navigation a {
+        position: relative;
+        font-size: 1.6em;
+        color: rgb(10, 10, 10);
+        text-decoration:none;
+        font: weight 500px;
+        margin-left:40px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+.navigation a::after{
+            content: "";
+            position:absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 3%; 
+            background:rgb(81, 179, 130) ;
+            border-radius: 5px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s ;
+            }
+.navigation a:hover::after{
+                transform-origin: left;
+                transform: scaleX(1);
+             }
+.navigation .btnlogin-popup{
+                    width: 130px;
+                    height: 50px;
+                    background:transparent;
+                    outline: none;
+                    border: 2px solid white;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    font-size: 1,1em;
+                    color: #131212;
+                    font-weight: 500;
+                    margin-left: 40px;
+                    transition: .5s;
+                    }
+.navigation .btnlogin-popup:hover {
+                    background: white;
+                    color: #162938;
+                    }
